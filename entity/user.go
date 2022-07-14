@@ -7,5 +7,5 @@ type User struct {
 	Passwd   string `json:"passwd" gorm:"type:varchar(255);not null"`
 	Address  string `json:"address" gorm:"type:varchar(255)"`
 	Email    string `json:"email" gorm:"type:varchar(50);unique"`
-	UserRole bool   `json:"role" gorm:"type:boolean;default:0"`
+	IsAdmin  bool   `json:"isAdmin" gorm:"type:boolean;default:0"`
 }
